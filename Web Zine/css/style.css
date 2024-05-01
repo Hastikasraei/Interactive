@@ -1,0 +1,579 @@
+            @font-face {
+                font-family: "Courier-New";
+                src: local("../font/Courier-New.woff"), url("../font/Courier-New.woff") format("woff");
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                background-image: url(../img/pattern-back.webp);
+                background-repeat: repeat;
+                overflow: hidden;
+                font-family: Courier-New !important;
+            }
+            
+            li {
+                color: #fff;
+            }
+            
+            li::marker {
+                color: #78ff00;
+            }
+            /* ================== home-page ======================== */
+            /* .con-img-movie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.con-img-movie img {
+    width: 30%;
+    margin: auto 0;
+    margin-top: 8%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25vh;
+    margin: 0 auto;
+} */
+            /* ============= info ================== */
+            
+            .container-info {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .con-info {
+                background-color: #ff5455;
+                width: 15px;
+                height: 230px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: smaller;
+            }
+            
+            .con-info p {
+                color: #fff;
+                transform: rotate(90deg);
+                text-align: center;
+            }
+            
+            .con-info-menu {
+                margin-left: 30px;
+            }
+            /* =========== scripts ================= */
+            
+            .container-scripts {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .con-scripts {
+                background-color: #ff5455;
+                width: 230px;
+                height: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .con-scripts p {
+                color: #fff;
+                font-size: smaller;
+            }
+            
+            .container-scripts-menu {
+                margin-bottom: 20px;
+            }
+            /* =========== Square ================= */
+            
+            #Square-1 {
+                background-color: #ff5455;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            
+            #Square-2 {
+                background-color: #ff5455;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            /* =========== text circular ================= */
+            
+            .con-emblem {
+                width: 100%;
+                height: 100%;
+            }
+            
+            .emblem {
+                /* background: url(../img/img-movies.webp); */
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 15vh;
+                margin: 0 auto;
+                width: 35vw;
+                height: 35vw;
+                border-radius: 50%;
+                font-weight: bold;
+                color: #78ff00;
+                /* animation: spinZ 20s linear infinite; */
+                text-align: center;
+                span {
+                    margin: -1.8vw;
+                    position: absolute;
+                    display: inline-block;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    text-transform: uppercase;
+                    font-size: 2vw;
+                    transition: all .30s cubic-bezier(0, 0, 0, 1);
+                }
+                a {
+                    margin: -1.8vw;
+                    position: absolute;
+                    display: inline-block;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    text-transform: uppercase;
+                    font-size: 2vw;
+                    transition: all .5s cubic-bezier(0, 0, 0, 1);
+                    color: #78ff00;
+                    text-decoration: none;
+                }
+                /* @keyframes spinZ {
+                    0% {
+                        transform: rotateZ(360deg);
+                    }
+                    100% {
+                        transform: rotateZ(0deg);
+                    }
+                } */
+            }
+            
+            .emblem-1 {
+                background: url(../img/caper.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 15vh;
+                margin: 0 auto;
+                width: 35vw;
+                height: 35vw;
+                border-radius: 50%;
+                font-weight: bold;
+                color: #78ff00;
+                /* animation: spinZ 20s linear infinite; */
+                text-align: center;
+                span {
+                    margin: -1.8vw;
+                    position: absolute;
+                    display: inline-block;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    text-transform: uppercase;
+                    font-size: 2vw;
+                    transition: all .5s cubic-bezier(0, 0, 0, 1);
+                }
+                @keyframes spinZ {
+                    0% {
+                        transform: rotateZ(360deg);
+                    }
+                    100% {
+                        transform: rotateZ(0deg);
+                    }
+                }
+            }
+            
+            .emblem-2 {
+                background: url(../img/Endless.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 15vh;
+                margin: 0 auto;
+                width: 35vw;
+                height: 35vw;
+                border-radius: 50%;
+                font-weight: bold;
+                color: #78ff00;
+                /* animation: spinZ 20s linear infinite; */
+                text-align: center;
+                span {
+                    margin: -1.8vw;
+                    position: absolute;
+                    display: inline-block;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    text-transform: uppercase;
+                    font-size: 2vw;
+                    transition: all .5s cubic-bezier(0, 0, 0, 1);
+                }
+                @keyframes spinZ {
+                    0% {
+                        transform: rotateZ(360deg);
+                    }
+                    100% {
+                        transform: rotateZ(0deg);
+                    }
+                }
+            }
+            
+            .emblem-3 {
+                background: url(../img/Into\ the\ wold.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 15vh;
+                margin: 0 auto;
+                width: 35vw;
+                height: 35vw;
+                border-radius: 50%;
+                font-weight: bold;
+                color: #78ff00;
+                /* animation: spinZ 20s linear infinite; */
+                text-align: center;
+                span {
+                    margin: -1.8vw;
+                    position: absolute;
+                    display: inline-block;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    text-transform: uppercase;
+                    font-size: 2vw;
+                    transition: all .5s cubic-bezier(0, 0, 0, 1);
+                }
+                @keyframes spinZ {
+                    0% {
+                        transform: rotateZ(360deg);
+                    }
+                    100% {
+                        transform: rotateZ(0deg);
+                    }
+                }
+            }
+            
+            .emblem-4 {
+                background: url(../img/turin.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 15vh;
+                margin: 0 auto;
+                width: 35vw;
+                height: 35vw;
+                border-radius: 50%;
+                font-weight: bold;
+                color: #78ff00;
+                /* animation: spinZ 20s linear infinite; */
+                text-align: center;
+                span {
+                    margin: -1.8vw;
+                    position: absolute;
+                    display: inline-block;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    text-transform: uppercase;
+                    font-size: 2vw;
+                    transition: all .5s cubic-bezier(0, 0, 0, 1);
+                }
+                @keyframes spinZ {
+                    0% {
+                        transform: rotateZ(360deg);
+                    }
+                    100% {
+                        transform: rotateZ(0deg);
+                    }
+                }
+            }
+            
+            .emblem-5 {
+                background: url(../img/Winter.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 15vh;
+                margin: 0 auto;
+                width: 35vw;
+                height: 35vw;
+                border-radius: 50%;
+                font-weight: bold;
+                color: #78ff00;
+                /* animation: spinZ 20s linear infinite; */
+                text-align: center;
+                span {
+                    margin: -1.8vw;
+                    position: absolute;
+                    display: inline-block;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    text-transform: uppercase;
+                    font-size: 2vw;
+                    transition: all .3s cubic-bezier(0, 0, 0, 1);
+                }
+                @keyframes spinZ {
+                    0% {
+                        transform: rotateZ(360deg);
+                    }
+                    100% {
+                        transform: rotateZ(0deg);
+                    }
+                }
+            }
+            /* ======================================================================= */
+            
+            .mySlides {
+                display: none;
+            }
+            
+            img {
+                vertical-align: middle;
+            }
+            /* Slideshow container */
+            
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+            
+            .active {
+                background-color: #717171;
+            }
+            /* Fading animation */
+            
+            .fade {
+                animation-name: fade;
+                animation-duration: 3s;
+            }
+            
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+                to {
+                    opacity: 1
+                }
+            }
+            /* ============ Automatic rotation =========================== */
+            
+            #cog {
+                -webkit-animation: cog 50s infinite;
+                -moz-animation: cog 5ms infinite;
+                -ms-animation: cog 50s infinite;
+                animation: cog 50s infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-timing-function: linear;
+                -ms-animation-timing-function: linear;
+                animation-timing-function: linear
+            }
+            
+            @keyframes cog {
+                100% {
+                    -moz-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    transform: rotate(360deg)
+                }
+            }
+            
+            .hover-text:hover {
+                color: #fff;
+            }
+            /* ====================================================================== */
+            /*---------------------------------------------------
+        Responsive
+-----------------------------------------------------*/
+            
+            @media screen and (max-width: 1300px) {
+                .emblem .emblem-1 .emblem-2 {
+                    top: 25vh;
+                }
+            }
+            
+            @media screen and (max-width: 1200px) {
+                .emblem {
+                    width: 50vw;
+                    height: 50vw;
+                }
+                .emblem-1 {
+                    width: 50vw;
+                    height: 50vw;
+                }
+                .emblem-2 {
+                    width: 50vw;
+                    height: 50vw;
+                }
+                .emblem-3 {
+                    width: 50vw;
+                    height: 50vw;
+                }
+                .emblem-4 {
+                    width: 50vw;
+                    height: 50vw;
+                }
+                .emblem-5 {
+                    width: 50vw;
+                    height: 50vw;
+                }
+            }
+            
+            @media screen and (max-width: 992px) {
+                .emblem {
+                    width: 70vw;
+                    height: 70vw;
+                }
+                .emblem-1 {
+                    width: 70vw;
+                    height: 70vw;
+                }
+                .emblem-2 {
+                    width: 70vw;
+                    height: 70vw;
+                }
+                .emblem-3 {
+                    width: 70vw;
+                    height: 70vw;
+                }
+                .emblem-4 {
+                    width: 70vw;
+                    height: 70vw;
+                }
+                .emblem-5 {
+                    width: 70vw;
+                    height: 70vw;
+                }
+                .emblem span {
+                    margin: -2.2vw;
+                    font-size: 2.5vw;
+                }
+            }
+            
+            @media screen and (max-width: 768px) {
+                .emblem .emblem-1 .emblem-2 {
+                    width: 45vw;
+                    height: 45vw;
+                }
+            }
+            
+            @media screen and (max-width: 680px) {
+                .emblem span {
+                    margin: -2.8vw;
+                    font-size: 3vw;
+                }
+                .emblem {
+                    width: 70vw;
+                    height: 70vw;
+                    top: 28vh;
+                }
+                .emblem-1 {
+                    width: 70vw;
+                    height: 70vw;
+                    top: 28vh;
+                }
+                .emblem-2 {
+                    width: 70vw;
+                    height: 70vw;
+                    top: 28vh;
+                }
+                .emblem-3 {
+                    width: 70vw;
+                    height: 70vw;
+                    top: 28vh;
+                }
+                .emblem-4 {
+                    width: 70vw;
+                    height: 70vw;
+                    top: 28vh;
+                }
+                .emblem-5 {
+                    width: 70vw;
+                    height: 70vw;
+                    top: 28vh;
+                }
+            }
+            
+            @media screen and (max-width: 576px) {
+                .emblem .emblem-1 .emblem-2 {
+                    width: 55vw;
+                    height: 55vw;
+                }
+            }
+            
+            @media screen and (max-width: 480px) {
+                .emblem .emblem-1 .emblem-2 {
+                    width: 65vw;
+                    height: 65vw;
+                    top: 30vh;
+                }
+                .emblem span {
+                    margin: -4.6vw;
+                    font-size: 5vw;
+                }
+                .con-scripts p {
+                    color: #fff;
+                    transform: rotate(90deg);
+                }
+                .con-scripts {
+                    width: 15px;
+                    height: 230px;
+                }
+                .container-scripts {
+                    flex-direction: row-reverse;
+                }
+                .container-scripts-menu {
+                    margin-right: 20px;
+                }
+            }
